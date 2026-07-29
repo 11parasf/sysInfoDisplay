@@ -1,0 +1,19 @@
+# Executables
+main
+*.out
+
+# Build directory
+build/
+
+# Object files
+*.o
+
+# Editor files
+*.swp
+*.swo
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
