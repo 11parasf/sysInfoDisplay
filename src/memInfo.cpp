@@ -1,9 +1,10 @@
+#include "../include/memInfo.h"
+#include <unistd.h>
 #include <iostream>
 #include <iomanip>
 #include <string>
 #include <fstream>
 #include <sstream>
-#include "../include/memInfo.h"
 
 int conversion(int value)
 {
@@ -13,7 +14,7 @@ int conversion(int value)
 
 int displayMemoryInfo()
 {
-	//std::cout << "\033[2J\033[H";
+	sleep(0.5);
 	std::ifstream memInfo("/proc/meminfo");
 	if(!memInfo)
 	{
@@ -45,7 +46,6 @@ int displayMemoryInfo()
 			std::cout << std::left << std::setw(20) << "Available Memory " << " = " << conversion(value) << " GB" << std::endl;
 		}
 	
-		//std::cout << "Used Memory : " << conversion(totalMemory - usedMemory) << " GB" << std::endl;
 
 	}
 	memInfo.close();

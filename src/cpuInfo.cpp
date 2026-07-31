@@ -14,6 +14,7 @@ CpuUsage calculateCpuUsage()
 	if(!CpuUsage)
 	{
 		std::cerr << "Error opening file" << std::endl;
+		return {};
 	}
 
 
