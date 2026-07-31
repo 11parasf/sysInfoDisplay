@@ -11,13 +11,14 @@ int conversion(int value)
 }
 
 
-void displayMemoryInfo()
+int displayMemoryInfo()
 {
 	//std::cout << "\033[2J\033[H";
 	std::ifstream memInfo("/proc/meminfo");
 	if(!memInfo)
 	{
 		std::cerr << "Error opening file" << std::endl;
+		return -1;
 	}
 
 	std::string line;
@@ -49,6 +50,7 @@ void displayMemoryInfo()
 	}
 	memInfo.close();
 	std::cout << std::left << std::setw(20) << "Used Memory " << " = " << conversion(totalMemory - availableMemory) << " GB" << std::endl;
+	return 0;
 }
 
 

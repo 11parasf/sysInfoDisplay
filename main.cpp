@@ -2,6 +2,8 @@
 #include <unistd.h>
 #include "include/memInfo.h"
 #include "include/cpuInfo.h"
+#include "include/diskUtilization.h"
+
 using namespace std;
 
 
@@ -24,7 +26,17 @@ int main()
 	
 		std::cout << "\033[1;34m" << "CPU\n" << "\033[0m";
 		displayCPUusage();
+
+		
+		//Disk Utilizaiton
+	
+		std::cout << "\n\n------------------------------\n\n";
+	
+		std::cout << "\033[1;34m" << "Disk Utilization\n" << "\033[0m";
+		diskUtilization();
 		sleep(1);
+
+
 	}
 
 

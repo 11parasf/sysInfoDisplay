@@ -1,4 +1,4 @@
 #pragma once
 
 
-void displayMemoryInfo();
+int displayMemoryInfo();
