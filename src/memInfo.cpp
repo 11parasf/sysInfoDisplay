@@ -14,7 +14,7 @@ int conversion(int value)
 
 int displayMemoryInfo()
 {
-	sleep(0.5);
+	sleep(1);
 	std::ifstream memInfo("/proc/meminfo");
 	if(!memInfo)
 	{
