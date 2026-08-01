@@ -1,11 +1,10 @@
-#include <iostream>
-#include <unistd.h>
 #include "include/memInfo.h"
 #include "include/cpuInfo.h"
 #include "include/diskUtilization.h"
+#include <iostream>
+#include <unistd.h>
 
 using namespace std;
-
 
 int main() 
 {	
@@ -16,22 +15,19 @@ int main()
 		std::cout << "     System Information\n";
 		std::cout << "==============================\n\n";
 
-		//RAM usage infomartion
-		std::cout << "\033[1;34m";
-		std::cout << "RAM\n";
-		std::cout << "\033[0m";
+		//RAM Utilization
+		std::cout << "\033[1;34m" << "RAM\n" << "\033[0m";	
 		displayMemoryInfo();
 
 		std::cout << "\n\n------------------------------\n\n";
-	
+		
+		//CPU Utilization
 		std::cout << "\033[1;34m" << "CPU\n" << "\033[0m";
 		displayCPUusage();
-
-		
-		//Disk Utilizaiton
 	
 		std::cout << "\n\n------------------------------\n\n";
 	
+		//Disk Utilizaiton
 		std::cout << "\033[1;34m" << "Disk Utilization\n" << "\033[0m";
 		diskUtilization();
 		sleep(1);

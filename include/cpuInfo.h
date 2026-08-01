@@ -6,7 +6,6 @@ struct CpuUsage
 	long idleTicks;
 };
 
-
 CpuUsage calculateCpuUsage();
 void displayCPUusage();
 

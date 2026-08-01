@@ -11,7 +11,6 @@ int conversion(int value)
 	return value/1000000;
 }
 
-
 int displayMemoryInfo()
 {
 	sleep(1);

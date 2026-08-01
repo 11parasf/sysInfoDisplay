@@ -5,8 +5,6 @@
 #include <fstream>
 #include <unistd.h>
 
-
-
 CpuUsage calculateCpuUsage()
 {
 
