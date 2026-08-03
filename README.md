@@ -4,7 +4,7 @@
 <h2 align="center">Preview</h2>
 
 <p align="center">
-  <img src="images/output.png" alt="System Information Display" width="850"/>
+  <img src="images/output.png" alt="System Information Display" height="450"/>
 </p>
 
 A lightweight Linux system monitoring tool written in **C++** that gathers real-time system information directly from the Linux kernel's `/proc` filesystem.
