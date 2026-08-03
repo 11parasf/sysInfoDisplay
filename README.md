@@ -1,6 +1,12 @@
 # System Information Display
 
 
+<h2 align="center">Preview</h2>
+
+<p align="center">
+  <img src="images/output.png" alt="System Information Display" width="850"/>
+</p>
+
 A lightweight Linux system monitoring tool written in **C++** that gathers real-time system information directly from the Linux kernel's `/proc` filesystem.
 
 The goal of this project is to understand how Linux exposes system information rather than relying on external utilities such as `top`, `htop`, or `free`.
