@@ -1,5 +1,6 @@
 # System Information Display
 
+
 A lightweight Linux system monitoring tool written in **C++** that gathers real-time system information directly from the Linux kernel's `/proc` filesystem.
 
 The goal of this project is to understand how Linux exposes system information rather than relying on external utilities such as `top`, `htop`, or `free`.
@@ -315,3 +316,13 @@ make clean
 - Colored terminal UI
 - ncurses interface
 - Threaded data collection
+
+
+---
+
+## Progress
+
+```text
+v1  ██████████ 100% ✔
+v2  ███░░░░░░░  In Progress...
+
